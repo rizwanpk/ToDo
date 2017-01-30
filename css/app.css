@@ -1,0 +1,285 @@
+/*
+  Made by Rizwan Yousaf
+*/
+html, body {
+  font-size: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-kerning: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  -moz-font-feature-settings: "liga" 1, "dlig" 1;
+  -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  -o-font-feature-settings: "liga" 1, "dlig" 1;
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-ms-clear, input::-ms-reveal {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-webkit-search-results-button, input::-webkit-search-results-decoration {
+  display: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #fff));
+  background: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -o-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #fff 100%);
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  /* W3C */
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+.page-wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  width: 100%;
+}
+
+.site-header .logo {
+  background-size: 180px 35px;
+  height: 35px;
+  margin: 40px auto 80px;
+  text-align: center;
+  font-family: "myFirstFont", sans-serif;
+  letter-spacing: 2px;
+  border-bottom: solid 4px #FF7F50;
+  overflow: hidden;
+  color: #FF7F50;
+  width: 180px;
+}
+
+@media (min-width: 650px) {
+  .site-header .logo {
+    background-size: 277px 45px;
+    height: 45px;
+    width: 277px;
+  }
+}
+
+.search-container {
+  position: relative;
+  /* Style the "Add" button */
+}
+
+.search-container input {
+  background: #fff;
+  border: 0;
+  border-bottom: solid 1px;
+  font-family: "myFirstFont1", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 28px;
+  width: 85%;
+  padding-left: 10px;
+  float: left;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 650px) {
+  .search-container input {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 38px;
+  }
+}
+
+.search-container input:focus {
+  background-color: rgba(255, 255, 0, 0.09) !important;
+}
+
+.search-container input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.search-container input:-moz-placeholder {
+  color: #000;
+}
+
+.search-container input::-moz-placeholder {
+  color: #000;
+}
+
+.search-container input:-ms-input-placeholder {
+  color: #000;
+}
+
+.search-container label {
+  background-size: 20px 20px;
+  font-family: "myFirstFont1", sans-serif;
+  cursor: text;
+  height: 20px;
+  left: 0px;
+  margin-top: -45px;
+  position: absolute;
+  top: 50%;
+  width: 190px;
+  z-index: 1;
+}
+
+@media (min-width: 650px) {
+  .search-container label {
+    background-size: 30px 30px;
+    height: 30px;
+    left: 0px;
+    margin-top: -45px;
+    width: 190px;
+  }
+}
+
+.search-container .addBtn {
+  padding: 7px;
+  width: 15%;
+  border-bottom: solid 1px;
+  font-family: "myFirstFont1", sans-serif;
+  background: #f9f9f9;
+  color: #000;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media (min-width: 650px) {
+  .search-container .addBtn {
+    padding: 12px;
+  }
+}
+
+.search-container .addBtn:hover {
+  background-color: #f9f9f9;
+}
+
+.search-results {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 120px -10px 0;
+  padding: 0 10px;
+}
+
+@media (min-width: 650px) {
+  .search-results {
+    margin: 150px -20px 0;
+    padding: 0 20px;
+  }
+}
+
+.search-results ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.search-results ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  margin-bottom: 5px;
+  background: rgba(154, 205, 50, 0.09);
+  font-size: 18px;
+  transition: 0.2s;
+  font-family: "myFirstFont1", sans-serif;
+  color: #000;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.search-results ul li:nth-child(odd) {
+  background: rgba(154, 205, 50, 0.09);
+}
+
+.search-results ul li:hover {
+  background: rgba(154, 205, 50, 0.09);
+}
+
+.search-results ul li.checked {
+  background: rgba(154, 205, 50, 0.09);
+  font-family: "myFirstFont1", sans-serif;
+  color: #000;
+  text-decoration: line-through;
+}
+
+.search-results ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0 1px 4px 0;
+  top: 12px;
+  left: 10px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.search-results .close {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  border-radius: 50%;
+  padding: 5px 8px 5px 8px;
+}
+
+.search-results .close:hover {
+  color: #000;
+}
+
+.search-results .delete-results {
+  text-align: center;
+  font-size: 18px;
+  font-family: "myFirstFont1", sans-serif;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}

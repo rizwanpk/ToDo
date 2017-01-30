@@ -1,0 +1,328 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Museo_Slab_1000.otf);
+}
+
+@font-face {
+    font-family: myFirstFont1;
+    src: url(../fonts/Museo_Slab_300.otf);
+}
+
+html {
+    background: #fff;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 22px;
+    overflow-y: scroll;
+}
+
+html, body {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+.site-header .title {
+    background-size: 180px 35px;
+    height: 35px;
+    margin: 40px auto 80px;
+    text-align: center;
+    font-family: "myFirstFont", sans-serif;
+    letter-spacing: 2px;
+    border-bottom: solid 4px #FF7F50;
+    overflow: hidden;
+    color: #FF7F50;
+    width: 180px;
+    font-size: 50px;
+}
+
+@media (min-width: 650px) {
+    .site-header .title {
+        background-size: 277px 60px;
+        height: 60px;
+        width: 277px;
+    }
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+    -moz-font-feature-settings: "liga" 1, "dlig" 1;
+    -ms-font-feature-settings: "liga" 1, "dlig" 1;
+    -o-font-feature-settings: "liga" 1, "dlig" 1;
+    font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+/*.title {
+	color: #555	;
+	font-size: 68px;
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	margin: 0; }*/
+
+input[type=text].add-todo {
+    background: #fff;
+    border: 0;
+    border-bottom: solid 1px;
+    font-family: "myFirstFont1", sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 28px;
+    width: 100%;
+    padding-left: 10px;
+    float: left;
+    -webkit-appearance: none;
+}
+
+@media (min-width: 650px) {
+    input[type=text].add-todo {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 38px;
+    }
+}
+
+input[type=text].add-todo:focus {
+    background-color: rgba(255, 255, 0, 0.09) !important;
+    outline: none;
+}
+
+label {
+    background-size: 20px 20px;
+    font-family: "myFirstFont1", sans-serif;
+    cursor: text;
+    height: 20px;
+    margin-top: -50px;
+    position: absolute;
+    z-index: 1;
+}
+
+@media (min-width: 650px) {
+    label {
+        background-size: 30px 20px;
+        height: 20px;
+        margin-top: -20px;
+        width: 190px;
+    }
+}
+
+input[type=checkbox].done-todo {
+    float: left;
+    margin: 2px 25px 0px 5px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 35px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+/*input[type=checkbox] {
+	visibility: hidden;
+}
+
+
+ SQUARED ONE
+.squaredOne {
+	float: left;
+	margin: -5px 25px 0px -30px;
+	width: 28px;
+	height: 28px;
+	background: #fff;
+	position: absolute;
+}
+
+.squaredOne label {
+	cursor: pointer;
+	margin: 0px 25px 0px 0px;
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 0px;
+	top: 0px;
+
+
+}
+
+.squaredOne label:after {
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	background: #fff;
+
+	background: -webkit-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: -moz-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: -o-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: -ms-linear-gradient(top, #00bf00 0%, #009400 100%);
+	background: linear-gradient(top, #00bf00 0%, #009400 100%);
+
+	top: 1px;
+	left: 1px;
+}
+
+.squaredOne label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0;
+}
+
+.squaredOne input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}*/
+.search-results {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 120px -10px 0;
+    padding: 0 10px;
+}
+
+@media (min-width: 650px) {
+    .search-results {
+        margin: 150px -20px 0;
+        padding: 0 20px;
+    }
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.white {
+    background: rgba(154, 205, 50, 0.09);
+    border: solid 1px #79f279;
+}
+
+.list li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    margin-bottom: 5px;
+    background: rgba(154, 205, 50, 0.09);
+    font-size: 18px;
+    transition: 0.2s;
+    font-family: "myFirstFont1", sans-serif;
+    color: #000;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.list li p {
+    font-family: "myFirstFont1", sans-serif;
+}
+
+.list li:last-child {
+    border: none;
+}
+
+.checked {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.options {
+    color: #999;
+    margin-bottom: 0;
+    font-size: 14px;
+    display: none;
+}
+
+.options a {
+    color: #999;
+}
+
+.options a:hover {
+    color: #333;
+}
+
+.options span, .options p {
+    display: inline;
+}
+
+.tasks {
+    font-style: normal;
+}
+
+.date {
+    font-size: 14px;
+    color: #777;
+    font-family: "myFirstFont1", sans-serif;
+}
+
+.close {
+    border-radius: 50%;
+    border: solid 1px;
+    padding: 0px 5px 0px 5px;
+    color: #686868;
+}
+
+@media (min-width: 650px) {
+    .search-results {
+        margin: 150px -20px 0;
+        padding: 0 20px;
+    }
+}
+
+.close:hover {
+    color: #686868;
+    border-radius: 0%;
+    border: solid 1px;
+    transition-delay: 0.2s;
+}
+
+.desc {
+    color: #555;
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 70%;
+    outline: none;
+    margin: 0px 160px 0px 20px;
+}
+
+.clear {
+    display: none;
+    float: right;
+}
+
+.instructions {
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+form hr {
+    border-bottom: 1px solid #EB6841;
+}
+
